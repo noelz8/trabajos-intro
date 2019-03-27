@@ -144,6 +144,7 @@
 
 
 
+import math
 def std(lista,avg):
     if (isinstance(lista,list) and isinstance (avg,float)):
         return math.sqrt(std_aux(lista,avg))/(len(lista)-1)
@@ -152,6 +153,16 @@ def std_aux(lista,avg):
     if lista==[]:
         return 0
     else: return ((lista[0]-avg)**2)+std_aux(lista[1:],avg)
+
+def std2(lista,avg):
+    if (isinstance(lista,list)and isinstance (avg,float)):
+        return math.sqrt(std2_aux(lista,avg,0))/(len(lista)-1)
+    else: return "Error"
+
+def std2_aux(lista,avg,resultado):
+    if lista==[]:
+        return resultado
+    else: return std_aux(lista[1:],avg,resultado+((lista[0]-avg)**2))
 
 
 
