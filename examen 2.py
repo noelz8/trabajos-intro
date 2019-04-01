@@ -13,14 +13,19 @@ def pares_aux(num):
 ##practica 2
 
 def palindromo(palin):
-    if isinstance (palin,int) and palin !=0:
+    if isinstance str(palin,int) and palin !=0:
         return palin_aux(palin,pal2)
     else: return "Error"
 
 def palin_aux(palin,pal2):
     if (palin,pal2) ==0:
         return False
-    if palin==pal2:
-        return palin_aux(palin,pal2)
+    if palin==pal2[-1:]:
+        return True
+
+####Practica 3
+def contarConsonantes(palabra):
+    if isinstance (palabra,int)==cad[i]=='a' or cad[i]=='e' or cad[i]=='i' or cad[i]=='o' or cad[i]=='u':
+        
     
         
