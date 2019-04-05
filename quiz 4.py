@@ -24,3 +24,4 @@ class buscar(object):
         elif lista[indice]==num:
             return busqueda2_aux(num,lista,indice+1, resultado+[indice])
         else : return self.busqueda2_aux(num,lista,indice+1,result)
+#########se le conoce como busqueda lineal
