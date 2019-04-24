@@ -12,4 +12,16 @@ class Matriz(object):
             return resultado
         else: return self.antidiagonal_aux(matriz,resultado+matriz[fila][col],fila+1,col-1)
 
+#### forma alterna
+
+    def suma_antidiagonal(self,matriz):
+        if isinstance (matriz,list) and matriz !=[] and len(matriz) ==len(matriz[0]):
+            return self.antidiagonal_aux2(matriz,lne(matriz),0,0)
+        else: return "Error"
+
+    def antidiagonal_aux2(self,matriz,largo,fila,suma):
+        if fila== largo:
+            return suma
+        else: return self.antidiagonal_aux2(matriz,largo,fila+1,suma+matriz[fila][-(fila+1)])
+
     
