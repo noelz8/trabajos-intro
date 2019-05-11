@@ -13,5 +13,7 @@ class multi(object):
         elif inidcecolumna==len(m[indicefila]):
             return self.multi_aux(n,m,resultado,matriz+[fila],[],indicefila+1,0)
         elif indicefila==0 or indicefila==(n-1):
+            return self.multi_aux(n,m,resultado,matriz,fila,0,indicecolumna+1)
+        else: return self.multi_aux(n,m,resultado,matriz,fila,indicefila,indicecolumna)
             
         
