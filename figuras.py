@@ -12,3 +12,6 @@ class relleno(object):
                 else: print(" ", end=" ")
             print("")
 #Triangulo seria ((num*2)-1)//2
+
+    def traingulo(self,base):
+        filas=(base*2)-1
