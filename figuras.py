@@ -11,3 +11,4 @@ class relleno(object):
                     print("*", end=" ")
                 else: print(" ", end=" ")
             print("")
+#Triangulo seria ((num*2)-1)//2
